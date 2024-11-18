@@ -85,11 +85,11 @@ export const login =
                 role: jwt.role
             };
 
-            dispatch({ type: AuthActionTypes.SIGN_IN, payload: user });
+            dispatch({ type: AuthActionTypes.SIGN_UP, payload: user });
 
             const result: ActionResult = {
                 success: true,
-                message: "Успішний вхід"
+                message: "Успішний реєстрація"
             };
 
             return result;
