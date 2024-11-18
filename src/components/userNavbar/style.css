@@ -1,0 +1,11 @@
+a {
+    text-decoration: none;
+}
+
+.sub-btn {
+    background-color: #FFDC62;
+    width: 150px;
+    padding: 6px 14px;
+    border: 1.6px solid #FFDC62;
+    color: black;
+};
