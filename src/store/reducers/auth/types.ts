@@ -18,6 +18,7 @@ export interface ILoginValues {
 };
 
 export enum AuthActionTypes {
+    SIGN_UP = "SIGN_UP",
     SIGN_IN = "SIGN_IN",
     LOGOUT = "LOGOUT"
 };
@@ -30,4 +31,13 @@ export interface ILoginResponse {
 export interface IAuthAction {
     type: AuthActionTypes,
     payload: any
+};
+
+export interface ISignUpValues{
+    email: string;
+    userName: string;
+    password: string;
+    confirmedPassword: string;
+    firstName: string;
+    lastName: string;
 };

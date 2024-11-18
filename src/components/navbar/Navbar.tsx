@@ -99,13 +99,15 @@ const Navbar = () => {
                     justifyContent: "right",
                 }}
             >
+                <Link to ="/signup">
                 <Button
-                    label="Створити"
+                    label="Зареєструватися"
                     style={{ margin: "8px", backgroundColor: "#4247e8" }}
                 />
+                </Link>
                 <Link to="/login">
                     <Button
-                        label="Login"
+                        label="Увійти"
                         style={{ margin: "8px", backgroundColor: "#4247e8" }}
                     />
                 </Link>

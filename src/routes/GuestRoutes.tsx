@@ -3,6 +3,7 @@ import { Route, Routes } from "react-router-dom";
 import GuestLayout from "../components/layouts/guestLayout/GuestLayout";
 import MainPage from "../pages/mainPage/MainPage";
 import Login from "../pages/login/Login";
+import SignUp from "../pages/login/SignUp";
 import NotFoundPage from "../pages/notFound/NotFoundPage";
 
 const GuestRoutes = () => {
@@ -11,6 +12,7 @@ const GuestRoutes = () => {
             <Route path="/" element={<GuestLayout />}>
                 <Route index element={<MainPage />} />
                 <Route path="login" element={<Login />} />
+                <Route path="signUp" element={<SignUp />} />
                 <Route path="*" element={<NotFoundPage />}/>
             </Route>
         </Routes>

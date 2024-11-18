@@ -37,7 +37,7 @@ const MainPage: React.FC = () => {
         <div className="main-page">
             <h1>Як ви хочете займатися?</h1>
             <p>Опануйте будь-який матеріал за допомогою інтерактивних карток, пробних тестів і навчальних занять у Quizlet.</p>
-            <Link to="/login">
+            <Link to="/signUp">
                 <Button
                     label="Зареєструватися безкоштовно"
                     style={{ margin: "8px", backgroundColor: "#4247e8" }}
