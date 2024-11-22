@@ -13,7 +13,7 @@ export const login =
     (values: ILoginValues) => async (dispatch: Dispatch<IAuthAction>): Promise<ActionResult> => {
         try {
             const response = await axios.post<ServiceResponse<ILoginResponse>>(
-                "http://51.13.113.49:5001/api/account/signin",
+                "https://quizlet-api-dpeeehgja8aghvcz.canadacentral-01.azurewebsites.net/api/account/signin",
                 values,
                 {
                     headers: {
@@ -61,7 +61,7 @@ export const login =
     (values: ISignUpValues) => async (dispatch: Dispatch<IAuthAction>): Promise<ActionResult> => {
         try {
             const response = await axios.post<ServiceResponse<ILoginResponse>>(
-                "http://51.13.113.49:5001/api/account/signup",
+                "https://quizlet-api-dpeeehgja8aghvcz.canadacentral-01.azurewebsites.net/api/account/signup",
                 values,
                 {
                     headers: {
