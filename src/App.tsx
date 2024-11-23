@@ -34,10 +34,9 @@ function App() {
 
     return (
         <PrimeReactProvider>
-            <UserRouters /> 
+            {isAuth ? <UserRouters /> : <GuestRoutes />}
         </PrimeReactProvider>
     );
 }
 
 export default App;
-{/* {isAuth ? <UserRouters /> : <GuestRoutes />} */}
